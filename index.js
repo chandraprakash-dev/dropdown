@@ -42,8 +42,7 @@ function dropdown(keyValue, options) {
     }
     dropdownContainer.appendChild(dropdownDiv);
     console.log(dropdownContainer);
+    main.appendChild(dropdownContainer);
 }
 
-dropdown('...', ['one', 'two', 'three']);
-main.appendChild(dropdownContainer);
-
+module.exports = dropdown;
