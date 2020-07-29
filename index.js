@@ -1,13 +1,10 @@
-const main = document.querySelector('main');
-
 const dropdownContainer = document.createElement('div');
 dropdownContainer.classList.add('dropdown-container');
 
 const dropdownDiv = document.createElement('div');
 dropdownDiv.classList.add("dropdown-content");
 
-
-function render() {
+function toggle() {
     console.log('in render');
     const dropdown = this.nextElementSibling;
     dropdown.classList.toggle('show');
@@ -16,7 +13,7 @@ function render() {
 function button() {
     const button = document.createElement('div');
     button.classList.add('button');
-    button.addEventListener('click', render);
+    button.addEventListener('click', toggle);
 
     return button;
 }
@@ -42,7 +39,8 @@ function dropdown(keyValue, options) {
     }
     dropdownContainer.appendChild(dropdownDiv);
     console.log(dropdownContainer);
-    main.appendChild(dropdownContainer);
+
+    return dropdownContainer;
 }
 
 module.exports = dropdown;
