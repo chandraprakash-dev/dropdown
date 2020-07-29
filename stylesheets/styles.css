@@ -12,13 +12,14 @@
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    cursor: pointer;
 }
 
 .button {
-    display: inline-block;
-    width: auto;
+    width: 20px;
     background-color: darkgray;
     cursor: pointer;
+    text-align: center;
 }
 
 .show {
