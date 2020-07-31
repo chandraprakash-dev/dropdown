@@ -5,7 +5,6 @@ const dropdownDiv = document.createElement('div');
 dropdownDiv.classList.add("dropdown-content");
 
 function toggle() {
-    console.log('in render');
     const dropdown = this.nextElementSibling;
     dropdown.classList.toggle('show');
 }
@@ -38,8 +37,6 @@ function dropdown(keyValue, options) {
         dropdownDiv.appendChild(li);
     }
     dropdownContainer.appendChild(dropdownDiv);
-    console.log(dropdownContainer);
-
     return dropdownContainer;
 }
 
