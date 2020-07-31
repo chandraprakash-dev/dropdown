@@ -3,6 +3,7 @@ An implementation of a dropdown in vanilla javascript
 
 ### How it works
 
+---
 Download the package by running:
 
     npm install dropdown-odin --save-dev
@@ -20,7 +21,11 @@ call dropdown function with the following parameters:
 
 Please copy the styling from the provided stylesheets. It is necessary to render and hide the dropdown properly.
 
----
+### Usage example
+    const dropdown = require('dropdown-odin');
+
+    const res = dropdown('...', ['one', 'two']);
+    document.querySelector('main').appendChild(res);
 
 ### Methods
 |Method|Description|
