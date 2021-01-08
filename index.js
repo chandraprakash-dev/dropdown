@@ -2,42 +2,42 @@ const dropdownContainer = document.createElement('div');
 dropdownContainer.classList.add('dropdown-container');
 
 const dropdownDiv = document.createElement('div');
-dropdownDiv.classList.add("dropdown-content");
+dropdownDiv.classList.add('dropdown-content');
 
 function toggle() {
-    const dropdown = this.nextElementSibling;
-    dropdown.classList.toggle('show');
+  const dropdown = this.nextElementSibling;
+  dropdown.classList.toggle('show');
 }
 
 function button() {
-    const button = document.createElement('div');
-    button.classList.add('button');
-    button.addEventListener('click', toggle);
+  const button = document.createElement('div');
+  button.classList.add('button');
+  button.addEventListener('click', toggle);
 
-    return button;
+  return button;
 }
 
 function key(keyValue) {
-    const p = document.createElement('p');
-    p.textContent = keyValue;
+  const p = document.createElement('p');
+  p.textContent = keyValue;
 
-    return p;
+  return p;
 }
 
 function dropdown(keyValue, options) {
-    const btn = button();
-    dropdownContainer.appendChild(btn);
+  const btn = button();
+  dropdownContainer.appendChild(btn);
 
-    const p = key(keyValue);
-    btn.appendChild(p);
+  const p = key(keyValue);
+  btn.appendChild(p);
 
-    for(let option of options) {
-        const li = document.createElement('li');
-        li.textContent = option;
-        dropdownDiv.appendChild(li);
-    }
-    dropdownContainer.appendChild(dropdownDiv);
-    return dropdownContainer;
+  for (const option of options) {
+    const li = document.createElement('li');
+    li.textContent = option;
+    dropdownDiv.appendChild(li);
+  }
+  dropdownContainer.appendChild(dropdownDiv);
+  return dropdownContainer;
 }
 
 module.exports = dropdown;
