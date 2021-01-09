@@ -14,12 +14,10 @@
 .dropdown-list {
     background: whitesmoke;
     width: 100px;
-    padding: 10px;
     list-style: none;
-    display: none;
     text-align: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
 
-.show {
-    display: block;
-}
