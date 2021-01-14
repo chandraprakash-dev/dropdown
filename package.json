@@ -19,9 +19,9 @@
   "author": "Chandra Prakash",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CodeSurfer3022/dropdown/issues"
+    "url": "https://github.com/chandraprakash-dev/dropdown/issues"
   },
-  "homepage": "https://github.com/CodeSurfer3022/dropdown#readme",
+  "homepage": "https://github.com/chandraprakash-dev/dropdown#readme",
   "description": "",
   "devDependencies": {
     "eslint": "^7.17.0",
